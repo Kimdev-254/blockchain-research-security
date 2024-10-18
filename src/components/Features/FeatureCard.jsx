@@ -1,7 +1,8 @@
+// components/Features/FeatureCard.jsx
 "use client"
 import { motion } from "framer-motion"
 
-export default function FeatureCard({ icon: Icon, title, description }) {
+export default function FeatureCard({ Icon, title, description }) {
   return (
     <motion.div
       className="p-6 bg-slate-900/50 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-colors"
