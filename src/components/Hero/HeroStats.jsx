@@ -1,12 +1,12 @@
-// components/Hero/HeroStats.jsx
+// components/HeroStats/HeroStats.jsx
 "use client"
 import { motion } from "framer-motion"
 
 export default function HeroStats() {
   const stats = [
-    { value: "500+", label: "Enterprise Clients" },
-    { value: "$2B+", label: "Assets Secured" },
-    { value: "99.9%", label: "Uptime" },
+    { value: "100+", label: "Security Audits" },
+    { value: "50+", label: "Research Papers" },
+    { value: "1000+", label: "Web3 Transitions" },
   ]
 
   return (
@@ -19,7 +19,9 @@ export default function HeroStats() {
           transition={{ delay: 0.5 + index * 0.1 }}
           className="text-center"
         >
-          <div className="text-3xl font-bold text-cyan-500">{stat.value}</div>
+          <div className="text-3xl font-bold bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text">
+            {stat.value}
+          </div>
           <div className="text-slate-400 mt-1">{stat.label}</div>
         </motion.div>
       ))}
