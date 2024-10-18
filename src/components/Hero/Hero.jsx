@@ -56,9 +56,9 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl blur-2xl opacity-20" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black to-blue-950 rounded-2xl blur-2xl opacity-20" />
             <Image
-              src="/blockchain-security.jpg"
+              src="/web3globe.png"
               alt="Blockchain Security Visualization"
               width={600}
               height={400}

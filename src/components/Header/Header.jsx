@@ -1,45 +1,43 @@
-// components/Header/Header.jsx
 "use client"
 import Link from "next/link"
-import { motion } from "framer-motion"
+import Image from "next/image"
 import Container from "../ui/Container"
 import NavLink from "./NavLink"
 
 export default function Header() {
-  const navItems = ["Solutions", "Products", "Resources", "Enterprise"]
+  const navItems = ["Solutions", "Products", "Resources", "About Us"]
 
   return (
-    <motion.header
-      className="fixed w-full z-50 bg-slate-950/80 backdrop-blur-lg py-4"
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+    <header className="fixed w-full z-50 bg-slate-950/80 backdrop-blur-lg py-4">
       <Container>
-        <div className="flex items-center justify-between">
-          <Link
-            href="/"
-            className="text-2xl font-orbitron font-bold bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text"
-          >
-            CryptoChain
-          </Link>
+        <nav className="flex items-center justify-between h-16">
+          <div className="flex items-center gap-2">
+            <Image
+              src="/logo1.png" // Make sure to add your logo to the public folder
+              alt="BRS Logo"
+              width={40}
+              height={40}
+              className="object-contain"
+            />
+            <span className="font-semibold text-xl">BRS.</span>
+          </div>
 
-          <nav className="hidden md:flex items-center space-x-8 font-medium">
+          <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <NavLink key={item} href={`#${item.toLowerCase()}`}>
+              <NavLink key={item} href={`/${item.toLowerCase()}`}>
                 {item}
               </NavLink>
             ))}
-            <motion.button
-              className="px-4 py-2 bg-cyan-500 text-white rounded-lg font-semibold hover:bg-cyan-600 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Contact Sales
-            </motion.button>
-          </nav>
-        </div>
+          </div>
+
+          <Link
+            href="/contact"
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Contact Us
+          </Link>
+        </nav>
       </Container>
-    </motion.header>
+    </header>
   )
 }
