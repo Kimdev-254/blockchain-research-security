@@ -26,15 +26,6 @@ export default function Footer() {
     "Security Updates",
   ]
 
-  const company = [
-    "About Us",
-    "Careers",
-    "Partners",
-    "Contact",
-    "Press Kit",
-    "Security Policy",
-  ]
-
   return (
     <footer className="bg-slate-900/50 border-t border-slate-800 pt-16 pb-8">
       <Container>

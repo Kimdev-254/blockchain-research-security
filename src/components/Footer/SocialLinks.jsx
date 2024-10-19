@@ -13,7 +13,7 @@ export default function SocialLinks() {
 
   return (
     <div className="flex gap-4">
-      {socialLinks.map((social, index) => {
+      {socialLinks.map((social) => {
         const Icon = social.icon
         return (
           <motion.a
