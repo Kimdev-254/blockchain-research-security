@@ -18,11 +18,12 @@ export default function Mission() {
             Pioneering the Future of Web3
           </h2>
           <p className="text-lg text-slate-300 leading-relaxed">
-            In today's rapidly evolving digital landscape, the transition from
-            Web2 to Web3 isn't just an upgrade—it's a fundamental transformation
-            in how we approach digital security and decentralization. At Block
-            Research Security Limited, we're committed to making this journey
-            secure, seamless, and strategic for your business.
+            In today&apos;s rapidly evolving digital landscape, the transition
+            from Web2 to Web3 isn&apos;t just an upgrade—it&apos;s a fundamental
+            transformation in how we approach digital security and
+            decentralization. At Block Research Security Limited, we&apos;re
+            committed to making this journey secure, seamless, and strategic for
+            your business.
           </p>
         </motion.div>
       </Container>
