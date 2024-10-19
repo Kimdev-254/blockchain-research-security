@@ -15,7 +15,7 @@ const orbitron = Orbitron({
 })
 
 export const metadata = {
-  title: "CryptoChain - Enterprise Blockchain Solutions",
+  title: "Blockchain Research and Security",
   description: "Enterprise-grade blockchain solutions for modern businesses",
   keywords:
     "enterprise blockchain, cryptocurrency, DeFi, smart contracts, business solutions",
