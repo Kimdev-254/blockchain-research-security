@@ -44,7 +44,7 @@ export default function Footer() {
               </h2>
             </div>
             <p className="text-slate-400">
-              Leading the revolution in blockchain security and Web3
+              Leading the revolution in blockchain security and Web3 and Education 
               transformation through cutting-edge research and innovation.
             </p>
             <SocialLinks />
